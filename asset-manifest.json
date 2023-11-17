@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/davidwingqvist.github.io/static/css/main.4934ca9b.css",
-    "main.js": "/davidwingqvist.github.io/static/js/main.b26a83d8.js",
+    "main.js": "/davidwingqvist.github.io/static/js/main.3d3aae57.js",
     "static/media/kamakura_backdrop.jpg": "/davidwingqvist.github.io/static/media/kamakura_backdrop.5f88e7e8d22f4765f028.jpg",
     "index.html": "/davidwingqvist.github.io/index.html",
     "main.4934ca9b.css.map": "/davidwingqvist.github.io/static/css/main.4934ca9b.css.map",
-    "main.b26a83d8.js.map": "/davidwingqvist.github.io/static/js/main.b26a83d8.js.map"
+    "main.3d3aae57.js.map": "/davidwingqvist.github.io/static/js/main.3d3aae57.js.map"
   },
   "entrypoints": [
     "static/css/main.4934ca9b.css",
-    "static/js/main.b26a83d8.js"
+    "static/js/main.3d3aae57.js"
   ]
 }
