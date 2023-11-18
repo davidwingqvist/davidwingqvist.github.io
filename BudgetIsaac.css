@@ -45,6 +45,7 @@
 .u-section-2 .u-list-1 {
   margin-top: 22px;
   margin-bottom: 53px;
+  min-height: 581px;
 }
 
 .u-section-2 .u-repeater-1 {
@@ -264,7 +265,7 @@
   width: 40px;
   height: 40px;
   left: auto;
-  top: 231px;
+  top: 230px;
   right: 10px;
 }
 
