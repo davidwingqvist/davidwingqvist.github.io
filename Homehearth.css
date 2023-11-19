@@ -575,7 +575,7 @@
 
 .u-section-3 .u-image-1 {
   min-height: 572px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/homehearth_screenshot.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/homehearth_screenshot_closeup.png");
   background-position: 50% 50%;
   --radius: 50px;
 }
