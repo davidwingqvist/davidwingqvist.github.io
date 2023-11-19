@@ -570,23 +570,30 @@
 }
 
 .u-section-3 .u-layout-wrap-1 {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 43px;
+  margin-bottom: 43px;
 }
 
-.u-section-3 .u-image-1 {
-  min-height: 572px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/Game2.png");
-  background-position: 9.99% 50%;
+.u-section-3 .u-video-1 {
+  min-height: 687px;
   --radius: 50px;
 }
 
 .u-section-3 .u-container-layout-1 {
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
   padding: 30px 60px;
 }
 
+.u-section-3 .embed-responsive-1 {
+  position: absolute;
+  width: 214%;
+  left: -57%;
+  height: 100%;
+  top: 0%;
+}
+
 .u-section-3 .u-layout-cell-2 {
-  min-height: 653px;
+  min-height: 687px;
   --radius: 50px;
 }
 
@@ -618,12 +625,13 @@
     min-height: 658px;
   }
 
-  .u-section-3 .u-image-1 {
+  .u-section-3 .u-video-1 {
     min-height: 472px;
+    background-position: 9.99% 50%;
   }
 
   .u-section-3 .u-layout-cell-2 {
-    min-height: 538px;
+    min-height: 566px;
   }
 
   .u-section-3 .u-text-2 {
@@ -636,7 +644,7 @@
     min-height: 482px;
   }
 
-  .u-section-3 .u-image-1 {
+  .u-section-3 .u-video-1 {
     min-height: 362px;
   }
 
@@ -660,7 +668,7 @@
     min-height: 763px;
   }
 
-  .u-section-3 .u-image-1 {
+  .u-section-3 .u-video-1 {
     min-height: 543px;
   }
 
@@ -680,7 +688,7 @@
     min-height: 562px;
   }
 
-  .u-section-3 .u-image-1 {
+  .u-section-3 .u-video-1 {
     min-height: 342px;
   }
 } .u-section-4 {
