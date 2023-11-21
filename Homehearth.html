@@ -19,6 +19,7 @@
     
     
     
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -69,7 +70,7 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-image u-parallax u-shading u-section-1" src="" data-image-width="1280" data-image-height="905" id="sec-05d7">
+    <section class="skrollable u-align-center u-clearfix u-image u-parallax u-shading u-section-1" src="" data-image-width="1280" data-image-height="905" id="sec-05d7">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h1 class="u-text u-text-default u-text-1">Homehearth</h1>
       </div>
@@ -179,7 +180,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   <p class="u-text u-text-2">In Homehearth the player has to defend the village from zombies that attack at night. Use all your abilities and defences to succeed at surviving the night!<br>
                     <br>
                     <span style="font-weight: 700;">Skills/​技術:</span>
-                    <br>D2D1 rendering　D2D1レンダー<br>Multithreading　マルチスレッド<br>Double Buffering　ダブルバッファ記憶<br>Agile Development (Scrum)　アジャイル開発<br>Entity-Component System<br>HLSL<br>Bloom　ブルーム<br>Option System　設定システム
+                    <br>D2D1 rendering　D2D1レンダー<br>Multithreading　マルチスレッド<br>Double Buffering　ダブルバッファ記憶<br>Agile Development (Scrum, Kanban)　アジャイル開発<br>Entity-Component System<br>HLSL<br>Bloom　ブルーム<br>Option System　設定システム
                   </p>
                   <a href="https://github.com/Homehearth/Homehearth" class="u-border-none u-btn u-btn-round u-button-style u-palette-4-dark-1 u-radius u-text-black u-btn-1" target="_blank">Github</a>
                 </div>
@@ -210,10 +211,41 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
             <p class="u-text u-text-1">
               <span style="font-size: 2.25rem; font-weight: 700;">Multithreading</span>
               <br>
-              <br>
               <br>Homehearth uses a technique called Double buffering to ensure smooth data transition between the rendering thread and the update thread. When the render thread is ready for a new batch of objects to render, it tells the update thread that a new batch is requested, waits for update thread to provide with the new data, and then renders the data.
             </p>
+            <h3 class="u-text u-text-2">Thread pooling</h3>
+            <p class="u-text u-text-3">I've also implemented a technique called 'thread pooling' which differs from simple thread creation by creating threads and putting them in a state of waiting for job requests. When a thread discovers a job requests, it grabs it from the queue and commits to the job task. Afterwards it releases the results and returns to its passive wait state. This technique would potentially save performance from the heavy task of creating and removing threads each frame.</p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-4-dark-1 u-section-6" id="sec-473a">
+      <div class="custom-expanded u-container-style u-group u-palette-4-light-1 u-radius u-shape-round u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h1 class="u-custom-font u-font-georgia u-text u-text-1">Thread Code</h1>
+          <p class="u-text u-text-2">As shown in the picture to the right, when doing a thread pool, we need to create a "main"-function for these threads. In this main function, we setup the state of several needed components and then put the threads in a 'while'-loop where they will wait for work.<br>
+            <br>To avoid any issues with racing and deadlocking, we utilize mutexes and locks to control who gets to grab next job from the queue.<br>
+            <br>When work is done, the compiled draw commands are sent to the main thread to be later sent to the GPU.
+          </p>
+        </div>
+      </div>
+      <div class="custom-expanded u-container-style u-group u-palette-4-light-1 u-radius u-shape-round u-group-2">
+        <div class="u-container-layout u-container-layout-2">
+          <img class="u-expanded-width u-image u-image-round u-radius u-image-1" src="images/homehearthrendermain.png" alt="" data-image-width="610" data-image-height="736">
+          <div class="u-rotation-parent u-rotation-parent-1">
+            <div class="u-shape u-shape-svg u-text-palette-4-light-1 u-shape-1">
+              <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 100" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4293"></use></svg>
+              <svg class="u-svg-content" viewBox="0 0 160 100" x="0px" y="0px" id="svg-4293" style="enable-background:new 0 0 160 100;"><g><path d="M109.2,99.9L160,50L109.2,0H75.6l38.7,38H0v24.2h114L75.6,100L109.2,99.9z"></path>
+</g></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-rotation-parent u-rotation-parent-2">
+        <div class="u-shape u-shape-svg u-text-palette-4-light-1 u-shape-2">
+          <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 100" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e21f"></use></svg>
+          <svg class="u-svg-content" viewBox="0 0 160 100" x="0px" y="0px" id="svg-e21f" style="enable-background:new 0 0 160 100;"><g><path d="M109.2,99.9L160,50L109.2,0H75.6l38.7,38H0v24.2h114L75.6,100L109.2,99.9z"></path>
+</g></svg>
         </div>
       </div>
     </section>

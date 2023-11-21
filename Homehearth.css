@@ -775,15 +775,15 @@
 }
 
 .u-section-5 .u-sheet-1 {
-  min-height: 339px;
+  min-height: 614px;
 }
 
 .u-section-5 .u-group-1 {
   width: 1124px;
   --radius: 10px;
   height: auto;
-  min-height: 294px;
-  margin: 23px 0 23px auto;
+  min-height: 524px;
+  margin: 23px 0 60px auto;
 }
 
 .u-section-5 .u-container-layout-1 {
@@ -793,6 +793,17 @@
 .u-section-5 .u-text-1 {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
   margin: 0;
+}
+
+.u-section-5 .u-text-2 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  font-weight: 700;
+  margin: 64px 0 0;
+}
+
+.u-section-5 .u-text-3 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  margin: 23px 0 0;
 }
 
 @media (max-width: 1199px) {
@@ -826,5 +837,175 @@
 @media (max-width: 575px) {
   .u-section-5 .u-group-1 {
     width: 340px;
+  }
+} .u-section-6 {
+  background-image: none;
+  min-height: 726px;
+}
+
+.u-section-6 .u-group-1 {
+  --radius: 10px;
+  height: auto;
+  background-image: none;
+  width: 604px;
+  min-height: 634px;
+  margin: 42px auto 0 calc(((100% - 1140px) / 2));
+}
+
+.u-section-6 .u-container-layout-1 {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.u-section-6 .u-text-1 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  font-weight: 700;
+  margin: 30px 30px 0;
+}
+
+.u-section-6 .u-text-2 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  margin: 20px 30px 0;
+}
+
+.u-section-6 .u-group-2 {
+  --radius: 10px;
+  height: auto;
+  background-image: none;
+  width: 434px;
+  min-height: 634px;
+  margin: -634px calc(((100% - 1140px) / 2) + 42px) 0 auto;
+}
+
+.u-section-6 .u-container-layout-2 {
+  padding: 19px 0;
+}
+
+.u-section-6 .u-image-1 {
+  height: 597px;
+  --radius: 15px;
+  margin: 0 30px;
+}
+
+.u-section-6 .u-rotation-parent-1 {
+  animation-timing-function: ease;
+  width: 253px;
+  height: 189px;
+  margin: -552px -100px 0 auto;
+}
+
+.u-section-6 .u-shape-1 {
+  width: 235px;
+  height: 96px;
+  transform-origin: center center 0px;
+  transform: translateX(-50%) translateY(-50%) rotate(206.06deg);
+}
+
+.u-section-6 .u-rotation-parent-2 {
+  animation-timing-function: ease;
+  width: calc(((100% - 1140px) / 2) + 204px);
+  height: 175px;
+  margin: -317px 0 60px auto;
+}
+
+.u-section-6 .u-shape-2 {
+  width: 235px;
+  height: 96px;
+  transform-origin: center center 0px;
+  transform: translateX(-50%) translateY(-50%) rotate(158.52deg);
+  margin-left: 0;
+  margin-right: -100px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-6 .u-group-1 {
+    margin-left: calc(((100% - 940px) / 2));
+    height: auto;
+  }
+
+  .u-section-6 .u-container-layout-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .u-section-6 .u-group-2 {
+    margin-right: calc(((100% - 940px) / 2) + 42px);
+    height: auto;
+  }
+
+  .u-section-6 .u-image-1 {
+    height: 596px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-6 .u-rotation-parent-2 {
+    width: calc(((100% - 940px) / 2) + 204px);
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-6 .u-group-1 {
+    margin-left: calc(((100% - 720px) / 2));
+  }
+
+  .u-section-6 .u-group-2 {
+    margin-right: calc(((100% - 720px) / 2) + 42px);
+  }
+
+  .u-section-6 .u-rotation-parent-2 {
+    width: calc(((100% - 720px) / 2) + 204px);
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-6 .u-group-1 {
+    width: 540px;
+    margin-left: calc(((100% - 540px) / 2));
+  }
+
+  .u-section-6 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-6 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-6 .u-group-2 {
+    margin-right: calc(((100% - 540px) / 2) + 42px);
+  }
+
+  .u-section-6 .u-rotation-parent-2 {
+    width: calc(((100% - 540px) / 2) + 204px);
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-6 .u-group-1 {
+    width: 340px;
+    margin-left: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-6 .u-group-2 {
+    width: 340px;
+    margin-right: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-6 .u-image-1 {
+    height: 467px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-6 .u-rotation-parent-1 {
+    margin-top: -423px;
+  }
+
+  .u-section-6 .u-rotation-parent-2 {
+    width: calc(((100% - 340px) / 2) + 204px);
   }
 }
